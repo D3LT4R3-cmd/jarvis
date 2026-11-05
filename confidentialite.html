@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité JARVIS</title>
+<style>
+  :root { --bg:#f7f7f5; --fg:#1d1d1b; --muted:#5f5f5a; --link:#0b5cad; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#151514; --fg:#ececea; --muted:#a3a39e; --link:#7db4ef; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:48px 16px; }
+  h1 { margin:0 0 8px; font-size:1.8rem; }
+  h2 { font-size:1.15rem; margin-top:32px; }
+  p.sub { color:var(--muted); margin-top:0; }
+  a { color:var(--link); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Règles de confidentialité</h1>
+  <p class="sub">JARVIS — dernière mise à jour : 5 novembre 2026</p>
+
+  <p>JARVIS est une application privée utilisée par une seule personne, son propriétaire, sur son propre ordinateur.
+     Elle n'est pas proposée au public et ne collecte aucune donnée d'autres personnes.</p>
+
+  <h2>Données Google utilisées</h2>
+  <p>Uniquement si le propriétaire connecte son compte Google, JARVIS accède à :</p>
+  <ul>
+    <li>Gmail, en lecture seule : lire et résumer les emails ;</li>
+    <li>Google Agenda, en lecture seule : lire les événements ;</li>
+    <li>Google Contacts, en lecture seule : retrouver le nom, l'email ou le téléphone d'un contact ;</li>
+    <li>Google Tasks : lire les tâches, en ajouter et les cocher, à la demande du propriétaire.</li>
+  </ul>
+  <p>JARVIS n'envoie pas d'email, ne modifie pas l'agenda et ne modifie pas les contacts.</p>
+
+  <h2>Où vont ces données</h2>
+  <p>Nulle part ailleurs que sur l'ordinateur du propriétaire. Les données sont traitées localement, y compris par
+     l'intelligence artificielle, qui tourne elle aussi sur cet ordinateur. Elles ne sont ni vendues, ni partagées,
+     ni transmises à un tiers, ni utilisées pour de la publicité ou pour entraîner des modèles d'IA.
+     Le jeton d'accès Google est stocké chiffré sur l'ordinateur (chiffrement Windows DPAPI).</p>
+
+  <h2>Conformité</h2>
+  <p>L'utilisation des données reçues des API Google respecte les
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">règles d'utilisation des données
+     utilisateur des services d'API Google</a>, y compris les exigences d'utilisation limitée (Limited Use).</p>
+
+  <h2>Révoquer l'accès</h2>
+  <p>L'accès peut être retiré à tout moment depuis JARVIS (page « Emails et agenda » → « Déconnecter ») ou depuis
+     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+     La déconnexion supprime le jeton enregistré sur l'ordinateur.</p>
+</main>
+</body>
+</html>
